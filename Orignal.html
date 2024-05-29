@@ -6,29 +6,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exchange Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 p-4 font-sans">
+<body class="bg-indigo-950  font-sans">
+
+    
+<!-- Responsive Navigation Bar -->
+<nav class="bg-blue-900 text-white py-4 px-5">
+    <div class="container mx-auto flex flex-wrap items-center justify-between">
+      <div class="flex items-center">
+        <button id="menu-button" class="block lg:hidden px-2 text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <div class="hidden lg:flex space-x-4">
+          <a href="#" class="hover:text-gray-400">Deal</a>
+          <a href="#" class="hover:text-gray-400">Verification</a>
+          <a href="#" class="hover:text-gray-400">Discount</a>
+          <a href="#" class="hover:text-gray-400">Insurance</a>
+          <a href="#" class="hover:text-gray-400">Evaluate</a>
+          <a href="#" class="hover:text-gray-400">Payment Fees</a>
+          <a href="#" class="hover:text-gray-400">FAQ</a>
+          <a href="#" class="hover:text-gray-400">Introduce</a>
+          <a href="#" class="hover:text-gray-400">Contact</a>
+        </div>
+      </div>
+      <div class="hidden lg:flex space-x-4">
+        <a href="#" class="bg-blue-700 py-2 px-4 rounded hover:bg-blue-600">Registration</a>
+        <a href="#" class="hover:text-gray-400">Log in</a>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden">
+      <a href="#" class="block py-2 px-4 hover:text-gray-400">Deal</a>
+      <a href="#" class="block py-2 px-4 hover:text-gray-400">Verification</a>
+      <a href="#" class="block py-2 px-4 hover:text-gray-400">Discount</a>
+      <a href="#" class="block py-2 px-4 hover:text-gray-400">Insurance</a>
+      <a href="#" class="block py-2 px-4 hover:text-gray-400">Evaluate</a>
+      <a href="#" class="block py-2 px-4 hover:text-gray-400">Payment Fees</a>
+      <a href="#" class="block py-2 px-4 hover:text-gray-400">FAQ</a>
+      <a href="#" class="block py-2 px-4 hover:text-gray-400">Introduce</a>
+      <a href="#" class="block py-2 px-4 hover:text-gray-400">Contact</a>
+      <a href="#" class="block bg-blue-700 py-2 px-4 rounded hover:bg-blue-600">Registration</a>
+      <a href="#" class="block py-2 px-4 hover:text-gray-400">Log in</a>
+    </div>
+  </nav>
+
+
 
     <!-- Header -->
-    <div class="flex items-center justify-center">
-        <header class="bg-blue-800 text-white text-center p-4 rounded-md md:w-1/2 sm:w-full">
-            <h1 class="text-lg font-bold">CHOOSE THE EXCHANGE DIRECTION</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-1 gap-4 mt-3">
+    <div class="flex items-center justify-center mt-3">
+        <header class="bg-white text-black text-center p-4 rounded-md md:w-1/2 sm:w-full">
+            <h1 class="text-lg font-semibold">CHOOSE THE EXCHANGE DIRECTION</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-1 gap-0 mt-3">
                 <div>
-                    <h2 class="font-semibold">YOU SEND</h2>
-                    <select class="py-2 px-3 my-2 rounded bg-gray-200 w-full">
+                    <h2 class="font-medium">YOU SEND</h2>
+                    <select class="py-2 px-3 my-2 rounded bg-violet-950  text-amber-300 w-full">
                         <option>PerfectMoney USD</option>
                         <!-- Add more options as needed -->
                     </select>
                 </div>
                 <!-- Exchange button -->
                 <div class="flex items-center justify-center">
-                    <button class="bg-red-500 text-white py-2 px-4 rounded-md mt-8">Exchange</button>
+                    <button class="bg-red-500 text-white py-2 px-4 rounded-md md:mt-6">Exchange</button>
                 </div>
                 <div>
-                    <h2 class="font-semibold">YOU RECEIVE</h2>
-                    <select class="py-2 px-3 my-2 rounded bg-gray-200 w-full">
+                    <h2 class="font-medium">YOU RECEIVE</h2>
+                    <select class="py-2 px-3 my-2 rounded bg-violet-950  text-amber-300 w-full">
                         <option>Bitcoin</option>
                         <!-- Add more options as needed -->
                     </select>
@@ -38,9 +83,9 @@
     </div>
 
     <!-- Announcement -->
-    <div class="mt-3 text-center border p-2 rounded-md bg-blue-800">
+    <div class="mt-3 text-center p-2 rounded-md bg-violet-950/90">
         <h1 class="text-white font-semibold">AUTO PAY PM BUY AND SELL, USDT-AUTO 5s PERCENTAGE</h1>
-        <p class="text-white">DISCOUNT UP TO 25% INSURANCE $2000 / Order</p>
+        <p class="text-amber-300">DISCOUNT UP TO 25% INSURANCE $2000 / Order</p>
     </div>
 
     <!-- Main Content -->
@@ -156,7 +201,7 @@
     </div>
 
     <!-- Footer Section -->
-    <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <div class="mt-4 grid grid-cols-2 lg:grid-cols-2 sm:grid-cols-2 gap-4">
         <div class="bg-white p-4 rounded-md shadow-md">
             <label class="block font-bold mb-2">Details sender:</label>
             <input type="text" class="w-full p-2 border rounded bg-gray-200" placeholder="Your email">
@@ -168,6 +213,19 @@
             <input type="text" class="w-full p-2 border rounded bg-gray-200" placeholder="Promo code">
         </div>
     </div>
+
+
+      <!-- JavaScript for toggling the mobile menu -->
+  <script>
+    document.getElementById('menu-button').onclick = function() {
+      var menu = document.getElementById('mobile-menu');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    }
+  </script>
 
 </body>
 </html>
