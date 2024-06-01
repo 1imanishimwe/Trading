@@ -366,6 +366,7 @@
 
                 
             <!-- Bank and Account Number -->
+            <form action="">
             <div class="form-group mb-4">
                 <label for="bankType" class="block font-semibold">Select Bank type and Enter your account number</label>
                 <div class="flex items-center justify-centr space-x-3">
@@ -385,14 +386,19 @@
 
             <div>
                 <!-- Form Fields -->
-            <div class="form-group mb-2">
-                <label for="youGive" class="block font-semibold">You give:</label>
-                <input type="text" id="youGive" class="border border-gray-300 p-1 rounded-md px-2 w-full" placeholder="You give *">
-            </div>
-            <div class="form-group mb-2">
-                <label for="youReceive" class="block font-semibold">Receive:</label>
-                <input type="text" id="youReceive" class="border border-gray-300 p-1 rounded-md px-2 w-full" value="-0.00016000" readonly>
-            </div>
+        
+ <!--flex one  -->
+                <div class="flex justify-between space-x-5">
+                    <div class="form-group mb-2 w-full">
+                        <label for="youGive" class="block font-semibold">You give:</label>
+                        <input type="text" id="youGive" class="border border-gray-300 p-1 rounded-md px-5 w-full" placeholder="You give *">
+                    </div>
+                    <div class="form-group mb-2 w-full">
+                        <label for="youReceive" class="block font-semibold">Receive:</label>
+                        <input type="text" id="youReceive" class="border border-gray-300 p-1 rounded-md px-5 w-full" value="-0.00016000" readonly>
+                    </div>
+                </div>
+          
             <div class="form-group mb-2 bg-blue-100 p-2 rounded">
                 <p>I want give 0 PerfectMoney USD</p>
                 <p>The rate will be fixed for 30 minutes.</p>
@@ -401,18 +407,23 @@
                 <label for="bitcoinAddress" class="block font-semibold">Bitcoin Address:</label>
                 <input type="text" id="bitcoinAddress" class="border border-gray-300 p-1 rounded-md px-2 w-full" placeholder="e.g. 1LP6jo9zYBw4KzsNQjKbo8FhmrphaPds">
             </div>
-            <div class="form-group mb-2">
+
+  <!-- flex two -->
+            <div class="flex justify-between space-x-5">
+            <div class="form-group mb-2 w-full">
                 <label for="email" class="block font-semibold">Your E-Mail:</label>
                 <input type="email" id="email" class="border border-gray-300 p-1 rounded-md px-2 w-full" placeholder="Email">
             </div>
-            <div class="form-group mb-2">
-                <label for="captcha" class="block font-semibold">Type the characters:</label>
+            <div class="form-group mb-2 w-full">
+                <label for="captcha" class="block font-semibold">Character:</label>
                 <input type="text" id="captcha" class="border border-gray-300 p-1 rounded-md px-2 w-full mb-2" placeholder="Captcha">
             </div>
+           </div>
            
             <div class="text-center">
                 <button class="bg-red-500 text-white px-4 py-2 rounded">EXCHANGE</button>
             </div>
+        </form>
         </div>
     
               </div>
