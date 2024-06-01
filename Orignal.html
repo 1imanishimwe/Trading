@@ -105,7 +105,9 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
         <!-- I Have Section -->
         <div class="bg-white p-4 rounded-md shadow-md">
-            <h2 class="text-lg font-bold mb-4 text-end">I HAVE</h2>
+            <h2 class="text-lg font-bold mb-4 flex justify-end"> 
+             <ion-icon name="arrow-up-outline" class="text-xl mt-1 font-bold"></ion-icon> 
+                I HAVE</h2>
             <ul class="space-y-1">
                 <li class="flex items-center justify-end p-2 bg-gray-100 rounded">
                     Perfect Money <img src="https://e7.pngegg.com/pngimages/214/412/png-clipart-logo-circle-graphics-sign-food-network-circle-food-text.png" alt="PM"
@@ -157,7 +159,8 @@
 
         <!-- I Want Section -->
         <div class="bg-white p-4 rounded-md shadow-md">
-            <h2 class="text-lg font-bold mb-4">I WANT</h2>
+            <h2 class="text-lg font-bold mb-4 flex justify-start">I WANT
+                <ion-icon name="arrow-down-outline" class="text-xl mt-1 font-bold"></ion-icon> </h2>
            
             <ul class="space-y-1">
                 <li class="flex items-center justify-start p-2 bg-gray-100 rounded">
@@ -207,7 +210,9 @@
         </div>
 
         <!-- Exchange Rates Section -->
-        <div class="bg-white p-4 rounded-md shadow-md">
+        <div class="rounded-md shadow-md">
+
+            <div class="rounded-md bg-white p-4 mb-10">
             <h2 class="text-lg font-bold mb-4 flex space-x-1">
                 <span class="mr-20"> EXCHANGE RATES</span>
 
@@ -219,31 +224,59 @@
                     <span> <img src="https://e7.pngegg.com/pngimages/214/412/png-clipart-logo-circle-graphics-sign-food-network-circle-food-text.png" alt="PM"
                         class=" rounded-full h-7 w-8 mt-1"></span>
                
-               
             </h2>
+            <hr class="border border-gray-800 mb-4">
+            
             <div class="space-y-2">
-                <div class="p-2 bg-gray-100 rounded">
-                    <p>PM USD Available: More than $10,000</p>
+                <div class="flex justify-between">
+                    <p class="text-lg font-medium"> <span class="text-rose-900">PM USD</span> Available:</p>
+                        <p class="text-lg font-medium text-red-500"> More than $10,000</p>
                 </div>
-                <div class="p-2 bg-gray-100 rounded">
-                    <p>We get: $0 - $5000 - 22,950</p>
+                <div class="">
+                    <p class="text-lg font-medium">We get</p>
                 </div>
-                <div class="p-2 bg-gray-100 rounded">
-                    <p>We send: $0 - $5000 - 23,450</p>
+                <hr class="border border-gray-800 mb-4">
+
+                <div class="flex justify-between">
+                    <p class="text-lg font-medium flex space-x-3"> $ 0 <ion-icon name="arrow-forward" class=" text-xl mx-1 mt-1"></ion-icon> 5000</p>
+                        <p class="text-lg font-medium text-red-500">22,950</p>
+                </div>
+                <div class="">
+                    <p class="text-lg font-medium">We Send</p>
+                </div>
+                <hr class="border border-gray-800 mb-4">
+
+                <div class="flex justify-between">
+                    <p class="text-lg font-medium flex space-x-3"> $ 0 <ion-icon name="arrow-forward" class=" text-xl mx-1 mt-1"></ion-icon> 5000</p>
+                        <p class="text-lg font-medium text-red-500">23,450</p>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="bg-white p-4 mt-10 rounded-md">
+
+            <div class="">
+                <h3 class="font-bold mb-2 text-xl ">% OTHER EXCHANGE SERVICES</h3>
+                <hr class="border border-gray-800 mb-4">
+                <div class="flex justify-between mb-2">
+                    <p class="font-medium text-lg">1 PM = 1 USDT-ERC20 (-5%)</p>
+                    <p class="text-red-500 text-lg font-medium">0.95</p>
+                </div>
+                <div class="flex justify-between mb-2">
+                    <p class="font-medium text-lg">1 USDT-ERC20 = 1 PM (0%)</p>
+                    <p class="text-red-500 text-lg font-medium">1.00</p>
+                </div>
+                <div class="flex justify-between mb-2">
+                    <p class="font-medium text-lg">Others (1.5%)</p>
+                    <p class="text-red-500 text-lg font-medium">0.985</p>
                 </div>
             </div>
-            <div class="mt-4">
-                <h3 class="font-bold mb-2">% OTHER EXCHANGE SERVICES</h3>
-                <div class="p-2 bg-gray-100 rounded">
-                    <p>1 PM = 1 USDT-ERC20 (-5%)</p>
-                </div>
-                <div class="p-2 bg-gray-100 rounded">
-                    <p>1 USDT-ERC20 = 1 PM (0%)</p>
-                </div>
-                <div class="p-2 bg-gray-100 rounded">
-                    <p>Others (1.5%)</p>
-                </div>
-            </div>
+        </div>
+
+
+
         </div>
     </div>
 
