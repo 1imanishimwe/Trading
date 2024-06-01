@@ -11,63 +11,73 @@
 </head>
 <body class="bg-indigo-900 font-sans">
 
-    
+
+      
 <!-- Responsive Navigation Bar -->
-<nav class="bg-blue-900 text-white py-4 px-5">
-    <div class="container mx-auto flex flex-wrap items-center justify-between">
-      <div class="flex items-center">
-        <button id="menu-button" class="block lg:hidden px-2 text-white focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<nav class="bg-purple-800 text-white py-4 px-5">
+  <div class="container mx-auto flex flex-wrap items-center justify-center">
+    <div class="flex items-center">
+      <button id="menu-button" class="block lg:hidden px-2 text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
+        </svg>
+    </button>
+
+      <div class="hidden lg:flex space-x-4 sm:ms-0" >
         <div class="hidden lg:flex space-x-4">
-          <a href="#" class="hover:text-gray-400">Deal</a>
-          <a href="#" class="hover:text-gray-400">Verification</a>
-          <a href="#" class="hover:text-gray-400">Discount</a>
-          <a href="#" class="hover:text-gray-400">Insurance</a>
-          <a href="#" class="hover:text-gray-400">Evaluate</a>
-          <a href="#" class="hover:text-gray-400">Payment Fees</a>
+          <a href="#" class="px-10 font-medium text-white py-1 rounded-lg bg-gradient-to-r from-yellow-400 to-purple-500 hover:from-orange-600 hover:to-purple-600">Advertise</a>
+          <a href="#" class="px-10 font-medium text-white py-1 rounded-lg bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600">Exchange</a>
+          <a href="#" class="hover:text-gray-400">White Paper</a>
           <a href="#" class="hover:text-gray-400">FAQ</a>
-          <a href="#" class="hover:text-gray-400">Introduce</a>
-          <a href="#" class="hover:text-gray-400">Contact</a>
+          <a href="#" class="hover:text-gray-400">English</a>
         </div>
       </div>
-      <div class="hidden lg:flex space-x-4">
-        <a href="#" class="bg-blue-700 py-2 px-4 rounded hover:bg-blue-600">Registration</a>
-        <a href="#" class="hover:text-gray-400">Log in</a>
+    </div>
+    <!-- <div class="hidden lg:flex space-x-4">
+      <a href="#" class="">Registration</a>
+      <a href="#" class="hover:text-gray-400">Log in</a>
+    </div> -->
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden space-x-2">
+    <a href="#" class="hover:text-gray-400">Advertise</a>
+    <a href="#" class="hover:text-gray-400">Exchange</a>
+    <a href="#" class="hover:text-gray-400">White Paper</a>
+    <a href="#" class="hover:text-gray-400">FAQ</a>
+    <a href="#" class="hover:text-gray-400">English</a>
+  </div>
+</nav>
+
+  <header class=" bg-gradient-to-r from-violet-800 to-indigo-950  w-full p-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 mx-2">
+      <div class="text-center">
+        <h1 class="font-bold text-2xl text-white">Focoin <span class="text-3xl">Exchange</span> </h1>
+        <p class="font-bold flex text-xl justify-center text-white"> Introduction <ion-icon name="chevron-forward-sharp" class="text-xl mt-2 "></ion-icon> 
+          <span class="text-transparent bg-gradient-to-r from-yellow-400 via-red-500  bg-clip-text">Exchange</span>
+</p>
+      </div>
+      <div class="text-center mt-4 md:mt-0 md:text-start"> 
+        <button class="px-10 font-bold text-white py-2 rounded-lg bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600">
+          Sign-In Now
+      </button>
       </div>
     </div>
-    <div id="mobile-menu" class="hidden lg:hidden">
-      <a href="#" class="block py-2 px-4 hover:text-gray-400">Deal</a>
-      <a href="#" class="block py-2 px-4 hover:text-gray-400">Verification</a>
-      <a href="#" class="block py-2 px-4 hover:text-gray-400">Discount</a>
-      <a href="#" class="block py-2 px-4 hover:text-gray-400">Insurance</a>
-      <a href="#" class="block py-2 px-4 hover:text-gray-400">Evaluate</a>
-      <a href="#" class="block py-2 px-4 hover:text-gray-400">Payment Fees</a>
-      <a href="#" class="block py-2 px-4 hover:text-gray-400">FAQ</a>
-      <a href="#" class="block py-2 px-4 hover:text-gray-400">Introduce</a>
-      <a href="#" class="block py-2 px-4 hover:text-gray-400">Contact</a>
-      <a href="#" class="block bg-blue-700 py-2 px-4 rounded hover:bg-blue-600">Registration</a>
-      <a href="#" class="block py-2 px-4 hover:text-gray-400">Log in</a>
-    </div>
-  </nav>
+  </header>
 
 
-
-    <div class="p-4 my-6 gap-4 grid grid-cols-1 md:grid-cols-3 sm:grid-cols-1">
-        <div class="text-white">
-            <div class="mx-auto px-2 rounded-md py-3 w-full md:w-4/5 bg-violet-950 h-full">
-                <div class="flex justify-between mb-4">
-                    <button class="w-1/2 text-center py-2 rounded-md mx-2 bg-blue-900 text-amber-300">
+    <div class="px-10 py-4 my-6 gap-4 grid grid-cols-1 md:grid-cols-3 sm:grid-cols-1">
+        
+            <div class="mx-auto px-2 rounded-md w-full md:w-4/5   h-full">
+                <div class="flex justify-between">
+                    <button class="w-1/2 text-center py-2 rounded-t-3xl bg-violet-950 text-amber-300">
                         Buy
                     </button>
-                    <button class="w-1/2 text-center py-2 rounded-md mx-2 bg-blue-900 text-amber-300">
+                    <button class="w-1/2 text-center py-2 rounded-t-3xl bg-white/20 text-amber-300">
                         Sell
                     </button>
                 </div>
 
-                <div class="text-center">
+                <div class="text-white bg-violet-950 py-3  px-2 ">
+           <div class="text-center ">
                     <h2 class="text-xl font-bold mb-4 text-amber-300">Buy Coins</h2>
                     <p class="mb-4">Purchase Alpha coins in an instant</p>
                 </div>
