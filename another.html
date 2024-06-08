@@ -107,6 +107,17 @@
 
 
         <section class="grid grid-cols-1 md:grid-cols-3 gap-3 px-1 ">
+
+          <div class="col-span-3 text-center md:space-x-5 space-x-2 flex justify-center mx-2">
+            <p class="text-xl px-2   font-medium text-gray-500 flex justify-center">LTV 
+              <ion-icon name="help" class="mt-2 text-sm ms-1 font-bold border rounded-full"></ion-icon>
+             </p>
+            <p class="border text-xl font-medium px-2 py-1 rounded-md  text-gray-500">50%</p>
+            <p class="border text-xl font-medium px-2 py-1 rounded-md  text-gray-500">65%</p>
+            <p class="border text-xl font-medium px-2 py-1 rounded-md  text-gray-500">80%</p>
+            <p class="border border-orange-500 px-2 py-1 rounded-md text-orange-500">90%</p>
+          </div>
+
           <div>
             <fieldset class="border rounded-lg p-3 mt-2">
               <legend class="text-sm font-medium">Estimated Down Payment</legend>
@@ -179,8 +190,12 @@
         </section>
         
         <div class="space-y-4 ">
-          <div class="flex justify-between items-center">
-            <span class="font-bold">NMLS: #204155</span>
+          <div class="flex justify-between items-center my-3">
+            <div>
+              <img src="Images/mort.png" alt="">
+            </div>
+           
+            
             <div class="text-center">
               <h1 class="font-bold">6.65%</h1>
               <p class="text-sm text-gray-400">Sept 22,2023</p>
@@ -193,11 +208,18 @@
               <h1 class="font-bold">6.65%</h1>
               <p class="text-sm text-gray-400">Fees : 5,924</p>
             </div>
+            <div class="text-center">
+             <button class="bg-blue-600 px-10 py-1 rounded-md text-white text-xl font-medium">Next</button>
+            </div>
             
           </div>
   
           <div class="flex justify-start space-x-24 items-center">
-            <h1 class="font-bold">Loan Term</h1>
+            <div>
+              <span class=" text-sm text-gray-800 font-medium">NMLS: #204155</span>
+              <h1 class="font-bold">Loan Term</h1>
+            </div>
+            
             <p class="">Unlimited</p>
             </select>
           </div>
@@ -213,6 +235,10 @@
     </main>
 
 
+    <!-- icons -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   
 
   <!-- JavaScript for toggling the mobile menu -->
